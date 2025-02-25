@@ -1,0 +1,23 @@
+[
+  {
+    "id": "1",
+    "email": "admin@example.com",
+    "password": "$2b$10$X7nS.U5mMfJ/zj5Kh.5oaeT8zw1e1G5eP.tAdiTdVrJgXiBu8x8ZK",
+    "name": "Admin User",
+    "role": "admin"
+  },
+  {
+    "id": "4",
+    "email": "alexis.test@test.com",
+    "password": "$2b$10$ZJyIPxI/chEeit0hHCSAl.UufqSTbXNLdvwvF5k2DzObz/8crWFK6",
+    "name": "hola",
+    "role": "admin"
+  },
+  {
+    "id": "5",
+    "email": "alexis.recalde@hotmail.com",
+    "password": "$2b$10$Z78wQ8rkRlAmjZth2Mf4IOcu5F/MJuOzCmm0vRVtdKJSrEzK1lwcy",
+    "name": "alexis",
+    "role": "user"
+  }
+]

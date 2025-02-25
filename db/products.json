@@ -1,0 +1,42 @@
+[
+  {
+    "id": "1",
+    "name": "Smartphone XYZ",
+    "price": 699.99,
+    "image": "https://via.placeholder.com/300",
+    "description": "Último modelo de smartphone con cámara de alta resolución y batería de larga duración.",
+    "category": "electronics"
+  },
+  {
+    "id": "2",
+    "name": "Laptop Pro",
+    "price": 1299.99,
+    "image": "https://via.placeholder.com/300",
+    "description": "Potente laptop para profesionales con procesador de última generación.",
+    "category": "electronics"
+  },
+  {
+    "id": "3",
+    "name": "Auriculares Inalámbricos",
+    "price": 99.99,
+    "image": "https://via.placeholder.com/300",
+    "description": "Auriculares con cancelación de ruido y gran calidad de sonido.",
+    "category": "accessories"
+  },
+  {
+    "id": "4",
+    "name": "Smart Watch",
+    "price": 199.99,
+    "image": "https://via.placeholder.com/300",
+    "description": "Reloj inteligente con monitor de actividad física y notificaciones.",
+    "category": "wearables"
+  },
+  {
+    "id": "5",
+    "name": "test",
+    "description": "test test",
+    "price": 2000,
+    "image": "https://via.placeholder.com/300",
+    "category": "hola"
+  }
+]

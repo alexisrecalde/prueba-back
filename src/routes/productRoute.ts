@@ -1,7 +1,7 @@
 import { Router, Request, Response } from 'express';
 import { body, validationResult } from 'express-validator';
 import productService from '../services/productService';
-import { isAdmin } from '../middleware/auth';
+import { isAdmin, isAuthenticated } from '../middleware/auth';
 
 const router = Router();
 
@@ -37,7 +37,7 @@ router.get('/:id', async (req: Request, res: Response) => {
   }
 });
 
-router.post('/', async (req: Request, res: Response) => {
+router.post('/', isAuthenticated, isAdmin , async (req: Request, res: Response) => {
     const errors = validationResult(req);
     if (!errors.isEmpty()) {
       res.status(400).json({ errors: errors.array() });
@@ -54,7 +54,7 @@ router.post('/', async (req: Request, res: Response) => {
   }
 );
 
-router.put('/:id', isAdmin, async (req: Request, res: Response) => {
+router.put('/:id', isAuthenticated ,isAdmin, async (req: Request, res: Response) => {
   try {
     const { id } = req.params;
     const updatedProduct = await productService.updateProduct(id, req.body);
@@ -71,7 +71,7 @@ router.put('/:id', isAdmin, async (req: Request, res: Response) => {
   }
 });
 
-router.delete('/:id', isAdmin, async (req: Request, res: Response) => {
+router.delete('/:id',isAuthenticated, isAdmin, async (req: Request, res: Response) => {
   try {
     const { id } = req.params;
     const result = await productService.deleteProduct(id);

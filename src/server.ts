@@ -17,7 +17,7 @@ app.use(cors({
 app.use(express.json());
 
 app.use('/api/auth', authRoutes);
-app.use('/api/products', isAuthenticated , productRoutes);
+app.use('/api/products' , productRoutes);
 app.use('/api/users',isAuthenticated, userRoutes);
 
 app.use((err: Error, req: express.Request, res: express.Response, next: express.NextFunction) => {

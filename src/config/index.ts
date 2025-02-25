@@ -1,6 +1,7 @@
 import * as dotenv from 'dotenv';import path from 'path';
 
 dotenv.config();
+console.log(process.env.CORS_ORIGIN);
 
 export const config = {
   port: process.env.PORT || 5000,

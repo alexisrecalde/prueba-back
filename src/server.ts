@@ -10,11 +10,7 @@ import { isAuthenticated } from './middleware/auth';
 const app = express();
 
 app.use(cors({
-    origin: [
-    'https://prueba-tecnica-alexis-projects-bca2f54f.vercel.app/',
-    'https://prueba-tecnica-umber-delta.vercel.app/',
-    config.corsOrigin
-  ],
+  origin: '*',
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization']
 }));
